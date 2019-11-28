@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Generic Search for IQueryable in ASP.NET MVC Core</Description>
+    <PackageProjectUrl>https://github.com/Grinderofl/GenericSearch</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Grinderofl/GenericSearch</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
 </Project>
