@@ -30,4 +30,4 @@ jobs:
         run: nuget sources add -name "GPR" -Source https://nuget.pkg.github.com/ORGANIZATION_NAME/index.json -Username Grinderofl -Password ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push generated package to GitHub registry
-        run: nuget push .\SOLUTION_FOLDER\PROJECT_FOLDER\out\*.nupkg -Source "GPR" -SkipDuplicate
+        run: nuget push .\SOLUTION_FOLDER\PROJECT_FOLDER\out\*.nupkg -SkipDuplicate -k ${{ secrets.NUGET_TOKEN }} -s https://api.nuget.org/v3/index.json
